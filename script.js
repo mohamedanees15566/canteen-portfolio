@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Function to toggle the menu sections based on click     this funtion is nor work
+// Function to toggle the menu sections based on click  
 document.addEventListener('DOMContentLoaded', function () {
     const menuButtons = document.querySelectorAll('.btnc');
 
