@@ -21,7 +21,7 @@ h5 {
 }
 
 h3 {
-    font-weight:400;
+    font-weight: 400;
     color: #2E7D32;
     font-family: Aniyah Regular;
 }
@@ -84,7 +84,7 @@ h4 {
 }
 
 #frt-section {
-    background-image: url(/image/4banner.jpg);
+    background-image: url(image/4banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
