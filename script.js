@@ -1,3 +1,15 @@
+//video
+window.addEventListener('load', () => {
+    const video = document.createElement('video');
+    video.src = '12(1).mp4';
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    document.getElementById('first-section').appendChild(video);
+});
+
+
 // Function to handle the "Explore More" button click event
 document.addEventListener('DOMContentLoaded', function () {
     const exploreButton = document.getElementById('explore-btn');
@@ -44,3 +56,53 @@ subscribeButton.addEventListener('click', function () {
     }
 });
 ;
+
+
+// sign in up 
+document.addEventListener("DOMContentLoaded", () => {
+    const signInForm = document.getElementById("signin-form");
+    const signUpForm = document.getElementById("signup-form");
+
+    if (signInForm) {
+        signInForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Signed In Successfully!");
+        });
+    }
+
+    if (signUpForm) {
+        signUpForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Signed Up Successfully!");
+        });
+    }
+});
+
+
+// ckeck out 
+let quantity = 1;
+const quantityDisplay = document.getElementById('quantity');
+const itemPrice = 990;
+const itemPriceDisplay = document.getElementById('item-price');
+const subtotalDisplay = document.getElementById('subtotal');
+const totalDisplay = document.getElementById('total');
+
+function updatePrices() {
+    itemPriceDisplay.textContent = itemPrice * quantity;
+    subtotalDisplay.textContent = itemPrice * quantity;
+    totalDisplay.textContent = itemPrice * quantity;
+    quantityDisplay.textContent = quantity;
+}
+
+function increaseQty() {
+    quantity++;
+    updatePrices();
+}
+
+function decreaseQty() {
+    if (quantity > 1) {
+        quantity--;
+        updatePrices();
+    }
+}
+

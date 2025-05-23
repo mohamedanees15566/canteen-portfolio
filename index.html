@@ -23,7 +23,7 @@
   <section id="first-section">
 
     <video autoplay muted loop playsinline id="bg-video">
-      <source src="image/12.mp4" type="video/mp4">
+      <source src="image/12(1).mp4" type="video/mp4" />
     </video>
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -36,9 +36,9 @@
         <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            <a class="nav-link" href="#">MENU</a>
+            <a class="nav-link" href="#trd-section">MENU</a>
             <a class="nav-link" href="#">GET DIRECTIONS</a>
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="signIn.html">SIGN IN</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@
             <h5 class="card-title">Milk Shake</h5>
             <p class="card-text">Creamy and refreshing milkshakes made with real milk and rich flavors. A perfect treat
               to cool down and enjoy any time of day.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill"> VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill"> ADD TO CARD </a>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
             <h5 class="card-title">Fresh Juices</h5>
             <p class="card-text">Pure, natural juices made from handpicked fruitsNo preservatives-just fresh, fruity
               goodness in every glass.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill"> VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill"> ADD TO CARD </a>
           </div>
         </div>
       </div>
@@ -94,7 +94,7 @@
             <h5 class="card-title">Rice and Curry</h5>
             <p class="card-text">A hearty and flovorful traditional meal served with aroatic rice and a variety of
               delicious curries. Comfort food at its best.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill">VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill">ADD TO CARD</a>
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
             <h5 class="card-title">Shorties</h5>
             <p class="cart-text">Tasty, savory short eats ideal for a quick snack. Perfectly spiced and ready to satisfy
               your hunger on the go.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill">VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill">ADD TO CARD</a>
           </div>
         </div>
       </div>
@@ -117,7 +117,7 @@
             <h5 class="card-title">Bun</h5>
             <p class="card-text">Freshly baked buns with a soft center and golden crust. Great for breakfast, tea time,
               or a light snack.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill">VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill">ADD TO CARD</a>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
           <div class="card-body">
             <h5 class="card-title">Coffee</h5>
             <p class="card-text">Soft, moist and baked to perfection-our cakes come in various flavors.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill"> VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill"> ADD TO CARD</a>
           </div>
         </div>
       </div>
@@ -140,7 +140,7 @@
             <h5 class="card-title">Cake</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
               content.</p>
-            <a href="#" class="btnb btn btn-primary rounded-pill">VIEW NOW > </a>
+            <a href="check.html" class="btnb btn btn-primary rounded-pill">ADD TO CARD </a>
           </div>
         </div>
       </div>
@@ -409,52 +409,62 @@
   <p class="sign">"Sign up for our newsletter and get 10% off your first bill, plus a chance to win exciting offers and
     exclusive invites!"</p>
   <div class="col-6 ">
-    <div class=" form-floating mb-3 mx-5">
-      <input type="email" class="form-control " id="floatingInputDisabled" placeholder="name@example.com">
-      <label for="floatingInputDisabled"> Your Email address</label>
-    </div>
-    <div class="form-floating mb-3 mx-5">
-      <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
-      <label for="floatingTextareaDisabled">Comments</label>
-    </div>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <div class=" form-floating mb-3 mx-5">
+        <input type="email" class="form-control " id="floatingInputDisabled" placeholder="name@example.com">
+        <label for="floatingInputDisabled"> Your Email address</label>
+      </div>
+      <div class="form-floating mb-3 mx-5">
+        <textarea class="form-control " placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
+        <label for="floatingTextareaDisabled">Comments</label>
+      </div>
 
-    <div class="  d-flex justify-content-first mx-5 mt-5  pb-5 ">
-      <button type="button" class="sub-bt btn btn-primary btn-lg rounded-pill">
-        SUBSCRIBE
-      </button>
-    </div>
+      <div class="  d-flex justify-content-first mx-5 mt-5  pb-5 ">
+        <button type="button" class="sub-bt btn btn-primary btn-lg rounded-pill">
+          SUBSCRIBE
+        </button>
+      </div>
+    </form>
   </div>
 </section>
 
 <section id="six-section">
-
-  <footer>
+  <footer class="footer">
     <div class="footer-container">
-      <div class="footer-section">
-        <p><strong>SLIATE, Dambawela Rd,<br>Gurudeniya,<br>Near Main St Post Office</strong></p>
-        <p><strong style="color: #45b649;">0451185111</strong></p>
-        <p>Monday – Sunday<br>08.00 AM – 6.00 PM</p>
+      <div class="footer-section contact-info">
+        <h4><i class="fas fa-map-marker-alt"></i> Address</h4>
+        <p>SLIATE, Dambawela Rd,<br>Gurudeniya, Near Main St Post Office</p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:0451185111">0451185111</a></p>
+        <p><i class="fas fa-clock"></i> Mon – Sun: 08:00 AM – 6:00 PM</p>
       </div>
 
-      <div class="footer-section">
-        <img src=".png" alt="My College Canteen">
-        <p>We want you to experience a wholesome diet without breaking your bank!<br>
-          Go back to those good old days where you can also get salubrious Juices, Smoothies and Breakfast Bowls!</p>
+      <div class="footer-section about">
+        <img src="image/logo .png" alt="My College Canteen Logo" class="footer-logo">
+        <p>Experience wholesome meals without breaking the bank! Enjoy nutritious juices, smoothies, and breakfast bowls
+          like the good old days.</p>
+      </div>
+
+      <div class="footer-section links">
+        <h4><i class="fas fa-link"></i> Quick Links</h4>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#menu"><i class="fas fa-utensils"></i> Menu</a></li>
+          <li><a href="https://goo.gl/maps/yourmaplink" target="_blank"><i class="fas fa-map"></i> Get Directions</a>
+          </li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
       </div>
     </div>
 
     <div class="footer-bottom">
-      <a href="#">Home</a> |
-      <a href="#">Menu</a> |
-      <a href="#">Get Directions</a> |
-      <a href="#">Contact</a>
-      <br><br>
-      <p>&copy; 2025, My College Canteen. All rights reserved. Designed & Managed by
-        <a href="https://www.instagram.com/mohamxd__anxxs/?next=%2F" target="_blank"> Mohamed Hanish !</a>
+      <p>&copy; 2025 My College Canteen. All rights reserved.</p>
+      <p>Designed & Managed by
+        <a href="https://www.instagram.com/mohamxd__anxxs/?next=%2F" target="_blank">Mohamed Hanish</a>
       </p>
     </div>
   </footer>
 </section>
+
 
 <script src="script.js" defer></script>
 </body>
